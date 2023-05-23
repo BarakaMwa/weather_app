@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +34,7 @@ class _RootPageState extends State<RootPage> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(title: const Text("Weather App")),
+      body: const HomePage(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           debugPrint("Action Settings");
